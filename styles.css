@@ -116,6 +116,7 @@ header .btn-inscrire:hover {
     padding: 100px 50px 50px;
     background: linear-gradient(135deg, #1403b1 0%, #1A1A2E 100%);
     min-height: 100vh;
+    margin: 0 20px; /* Ajout d'une marge uniforme */
 }
 
 .hero-text {
@@ -157,8 +158,8 @@ header .btn-inscrire:hover {
 }
 
 .services {
- 
     text-align: center;
+    margin: 0 20px; /* Ajout d'une marge uniforme */
 }
 
 .services h2 {
@@ -203,9 +204,9 @@ header .btn-inscrire:hover {
 }
 
 .testimonials {
-   
     text-align: center;
     background-color: var(--background-color);
+    margin: 0 20px; /* Ajout d'une marge uniforme */
 }
 
 .testimonials h2 {
@@ -243,6 +244,7 @@ header .btn-inscrire:hover {
 .contact {
     padding: 50px;
     text-align: center;
+    margin: 0 20px; /* Ajout d'une marge uniforme */
 }
 
 .contact h2 {
@@ -290,6 +292,7 @@ footer {
     text-align: center;
     background-color: var(--primary-color);
     color: white;
+    margin: 0 20px; /* Ajout d'une marge uniforme */
 }
 
 footer .social-links {
@@ -306,7 +309,6 @@ footer .social-links a {
 }
 
 .glass-nav {
-    /* background: rgba(255, 255, 255, 0.1); */
     backdrop-filter: blur(10px);
     position: fixed;
     width: 100%;
@@ -529,7 +531,6 @@ footer .social-links a {
     }
 
     .slider-dot {
-        /* border: 2px solid var(--secondary-color); */
         background: transparent;
     }
 
