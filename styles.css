@@ -390,11 +390,28 @@ footer .social-links a {
     header {
         flex-direction: row;
         align-items: center;
-        position: relative;
+        position: fixed; /* Assure que le header reste fixe */
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+        background: rgba(108, 99, 255, 0.95); /* Fond semi-transparent */
+        backdrop-filter: blur(10px);
     }
 
     header .logo {
-        margin: 0 auto; /* Centre le logo */
+        position: relative;
+        z-index: 1002; /* Logo au-dessus du menu mobile */
+        margin: 0; /* Supprime la marge auto */
+        flex: 1; /* Prend l'espace disponible */
+        text-align: center;
+    }
+
+    header nav {
+        order: -1; 
+        width: auto;
+        position: static;
+        margin-left: 0;
     }
 
     header nav ul {
@@ -403,7 +420,7 @@ footer .social-links a {
         gap: 10px;
         width: 100%;
         position: absolute;
-        top: 70px;
+        top: 100%; /* Place le menu juste en dessous du header */
         left: 0;
         background-color: var(--primary-color);
         padding: 20px;
@@ -421,6 +438,7 @@ footer .social-links a {
         flex-direction: column;
         gap: 15px;
         text-align: center;
+        padding-top: 15px;
     }
 
     header nav ul.active {
@@ -459,14 +477,11 @@ footer .social-links a {
         color: var(--secondary-color);
     }
 
-    header nav {
-        order: -1; 
-        width: auto;
-    }
-
     header .hamburger {
         display: flex;
         margin-left: 0; 
+        margin-right: 0;
+        padding-right: 15px;
     }
 
     header .btn-inscrire {
