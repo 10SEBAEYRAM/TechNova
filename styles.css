@@ -1,7 +1,7 @@
 :root {
-    --primary-color: #6C63FF;        /* Nouveau violet */
-    --secondary-color: #00D9F5;      /* Nouveau cyan */
-    --background-color: #0B0B15;     /* Nouveau fond sombre */
+    --primary-color: #6C63FF;        
+    --secondary-color: #00D9F5;      
+    --background-color: #0B0B15;     
     --text-color: #FFFFFF;
     --font-family: 'Roboto', sans-serif;
     --gradient-1: linear-gradient(45deg, #6C63FF, #00D9F5);
@@ -390,20 +390,20 @@ footer .social-links a {
     header {
         flex-direction: row;
         align-items: center;
-        position: fixed; /* Assure que le header reste fixe */
+        position: fixed; 
         top: 0;
         left: 0;
         width: 100%;
         z-index: 1000;
-        background: rgba(108, 99, 255, 0.95); /* Fond semi-transparent */
+        background: rgba(108, 99, 255, 0.95); 
         backdrop-filter: blur(10px);
     }
 
     header .logo {
         position: relative;
-        z-index: 1002; /* Logo au-dessus du menu mobile */
-        margin: 0; /* Supprime la marge auto */
-        flex: 1; /* Prend l'espace disponible */
+        z-index: 1002; 
+        margin: 0; 
+        flex: 1; 
         text-align: center;
     }
 
@@ -420,7 +420,7 @@ footer .social-links a {
         gap: 10px;
         width: 100%;
         position: absolute;
-        top: 100%; /* Place le menu juste en dessous du header */
+        top: 100%;
         left: 0;
         background-color: var(--primary-color);
         padding: 20px;
@@ -492,18 +492,18 @@ footer .social-links a {
         flex-direction: column;
         text-align: center;
         padding-top: 100px;
-        gap: 10px; /* Réduit l'espace entre les éléments */
+        gap: 10px; 
     }
 
     .hero-text {
         max-width: 100%;
-        padding-bottom: 0; /* Supprime le padding en bas du texte */
+        padding-bottom: 0; 
     }
 
     .hero-image {
         max-width: 100%;
-        margin-top: -20px; /* Valeur négative pour remonter l'image */
-        transform: scale(0.9); /* Réduit légèrement la taille de l'image */
+        margin-top: -20px; 
+        transform: scale(0.9); 
     }
 
     .service-cards, .testimonial-slider {
@@ -605,7 +605,7 @@ footer .social-links a {
 
 @media (max-width: 425px) {
     .hero-image {
-        margin-top: -120px !important; /* Remonte encore plus l'image sur mobile */
+        margin-top: -120px 
         transform: scale(0.85);
     }
 }
