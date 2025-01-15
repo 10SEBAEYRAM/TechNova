@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechNova - Solutions d'IA</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+</head>
+<body>
+    <!-- En-tête -->
+    <header class="glass-nav">
+        <div class="logo">TechNova</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#temoignages">Témoignages</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="btn-inscrire">S'inscrire</button>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Section d'accueil -->
+    <section id="accueil" class="hero">
+        <div class="hero-text" data-aos="fade-right">
+            <h1 class="animated-text">Révolutionnez votre entreprise avec l'IA</h1>
+            <p class="fade-in">Découvrez comment nos solutions d'intelligence artificielle peuvent transformer votre entreprise.</p>
+            <button class="btn-decouvrir pulse">Découvrir</button>
+        </div>
+        <div class="hero-image floating" data-aos="fade-left">
+            <img src="images/banniere.jpg" alt="Illustration IA">
+        </div>
+    </section>
+
+    <!-- Section des services -->
+    <section id="services" class="services">
+        <h2 class="section-title" data-aos="fade-up">Nos Services</h2>
+        <div class="service-cards">
+            <div class="card tilt-card" data-aos="flip-left">
+                <i class="fas fa-brain"></i>
+                <h3>Analyse Prédictive</h3>
+                <p>Utilisez l'IA pour anticiper les tendances et prendre des décisions éclairées.</p>
+            </div>
+            <div class="card tilt-card" data-aos="flip-up">
+                <i class="fas fa-robot"></i>
+                <h3>Automatisation</h3>
+                <p>Automatisez vos processus pour gagner en efficacité et réduire les coûts.</p>
+            </div>
+            <div class="card tilt-card" data-aos="flip-right">
+                <i class="fas fa-chart-line"></i>
+                <h3>Optimisation</h3>
+                <p>Optimisez vos opérations avec des algorithmes d'IA sur mesure.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section des témoignages -->
+    <section id="temoignages" class="testimonials">
+        <h2>Témoignages</h2>
+        <div class="testimonial-slider">
+            <div class="testimonial">
+                <img src="images/utilisateur1.png" alt="Photo utilisateur 1">
+                <h3>Marie </h3>
+                <p>"TechNova a transformé notre entreprise avec ses solutions d'IA. Très impressionnant !"</p>
+            </div>
+            <div class="testimonial">
+                <img src="images/utilisateur2.png" alt="Photo utilisateur 2">
+                <h3>Jean</h3>
+                <p>"L'automatisation a permis à notre équipe de se concentrer sur des tâches plus stratégiques."</p>
+            </div>
+            <div class="testimonial">
+                <img src="images/utilisateur3.png" alt="Photo utilisateur 3">
+                <h3>Pierre </h3>
+                <p>"Les analyses prédictives nous ont aidés à anticiper les besoins de nos clients."</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section de contact -->
+    <section id="contact" class="contact">
+        <h2>Contactez-nous</h2>
+        <form>
+            <input type="text" placeholder="Nom" required>
+            <input type="email" placeholder="Email" required>
+            <textarea placeholder="Message" required></textarea>
+            <button type="submit" class="btn-envoyer">Envoyer</button>
+        </form>
+        <div class="contact-info">
+            <p>Email: contact@technova.com</p>
+            <p>Téléphone: +33 1 23 45 67 89</p>
+        </div>
+    </section>
+
+    <!-- Pied de page -->
+    <footer>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+        <p>&copy; 2023 TechNova. Tous droits réservés.</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+
+        VanillaTilt.init(document.querySelectorAll(".tilt-card"), {
+            max: 25,
+            speed: 400,
+            glare: true,
+            "max-glare": 0.5
+        });
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const hamburger = document.querySelector('.hamburger');
+            const navLinks = document.querySelector('.nav-links');
+            const btnInscrire = document.querySelector('.btn-inscrire');
+
+            hamburger.addEventListener('click', function() {
+                navLinks.classList.toggle('active');
+                btnInscrire.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>
