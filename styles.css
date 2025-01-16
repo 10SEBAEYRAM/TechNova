@@ -512,7 +512,7 @@ p {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
     position: relative;
     z-index: 1;
-    margin-bottom: 80px; /* Réduit encore l'espace pour remonter les infos */
+    margin-bottom: 80px; 
 }
 
 .form-group {
@@ -873,7 +873,7 @@ footer::before {
         gap: 1.5rem;
         width: 100%;
         align-items: center;
-        margin: 2rem 0 3.5rem; /* Augmentation de la marge en bas */
+        margin: 2rem 0 3.5rem; 
     }
 
     .hero-image {
@@ -1013,7 +1013,7 @@ footer::before {
     gap: 1.5rem;
     align-items: center;
 }
-
+}
 /* Ajustements responsives */
 @media (max-width: 768px) {
     .hero-buttons {
@@ -1021,12 +1021,12 @@ footer::before {
         gap: 1.5rem;
         width: 100%;
         align-items: center;
-        margin: 2rem 0 3.5rem; /* Augmentation de la marge en bas */
+        margin: 2rem 0 3.5rem; 
     }
 
     .hero-image {
         max-width: 80%;
-        margin-top: 1.5rem; /* Ajout d'espace au-dessus de l'image */
+        margin-top: 1.5rem; 
     }
 }
 
