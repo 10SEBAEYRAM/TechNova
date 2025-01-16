@@ -491,14 +491,15 @@ p {
 }
 
 /* Contact Section */
-.contact {
-    position: relative;
-    padding: 100px 20px;
-    overflow: visible;
-    background: linear-gradient(135deg, rgba(108, 99, 255, 0.1) 0%, rgba(0, 217, 245, 0.1) 100%);
-    border-radius: 20px;
-    margin: 20px;
-}
+
+    .contact {
+        position: relative;
+        padding: 100px 20px;
+        overflow: visible;
+        background: linear-gradient(135deg, rgba(108, 99, 255, 0.1) 0%, rgba(0, 217, 245, 0.1) 100%);
+        border-radius: 20px;
+        margin: 20px;
+    }
 
 .contact form {
     max-width: 600px;
@@ -569,7 +570,7 @@ p {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    bottom: -40px; /* Remonté encore plus haut */
+    bottom: -60px; /* Modifié de -40px à -60px pour remonter l'élément */
     width: 100%;
     max-width: 400px;
     text-align: center;
@@ -580,7 +581,6 @@ p {
     box-shadow: 0 5px 20px rgba(108, 99, 255, 0.2);
     z-index: 2;
 }
-
 .contact-info p {
     font-size: 0.95rem;
     color: var(--text-color);
@@ -924,6 +924,12 @@ footer::before {
     .contact-info {
         bottom: -45px;
         padding: 1rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .contact-info {
+        bottom: 40px; 
     }
 }
 
